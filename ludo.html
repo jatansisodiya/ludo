@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ludo</title>
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+        
+        table {
+            empty-cells: show;
+            border-sizing: border-box;
+        }
+        
+        .border {
+            border-collapse: collapse;
+        }
+        
+        .red {
+            background-color: red;
+            animation-name: pulse;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-delay: 1s;
+        }
+        
+        .green {
+            background-color: green;
+            animation-name: pulse;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-delay: 4s;
+        }
+        
+        .blue {
+            background-color: rgba(25, 0, 255, 0.466);
+            animation-name: pulse;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-delay: 11s;
+        }
+        
+        .yellow {
+            background-color: yellow;
+            animation-name: pulse;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-delay: 8s;
+        }
+        
+        @keyframes pulse {
+            from {
+                transform: scale(0);
+                opacity: .1;
+            }
+            50% {
+                opacity: .3;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .star {
+            font-size: 20px;
+            position: relative;
+            top: 8rem;
+            left: 39rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!--<span class="star">&#9733 </span>-->
+
+    <table border="1" height=100% width=100% rules="all">
+        <!--row 1-->
+        <tr>
+            <!--col 1-->
+            <td width="33%">
+                <table border="1" height=100% width=100% class="red" rules="all">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+            </td>
+            <!--col 2-->
+            <td width="18%">
+                <table border="1" height=100% width=100% rules="all">
+                    <!--row 5 col 3-->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="green"></td>
+                        <td class="green"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="green"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="green"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="green"></td>
+                        <td></td>
+                    </tr>
+
+                </table>
+
+            </td>
+            <!--col 3-->
+            <td width="33%">
+
+                <table border="1" height=100% width=100% class="green" rules="all">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+            </td>
+
+        </tr>
+
+
+
+
+
+        <!--row2-->
+        <tr>
+
+            <!--col 1-->
+            <td>
+                <table border="1" height=100% width=100% rules="all">
+                    <tr>
+                        <td></td>
+                        <td class="red"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="red"></td>
+                        <td class="red"></td>
+                        <td class="red"></td>
+                        <td class="red"></td>
+                        <td class="red"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+            <!--col 2-->
+            <td>
+                <table border="1" height=100% width=100% rules="all">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+            <!--col 3-->
+            <td>
+                <table border="1" height=100% width=100% rules="all">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="yellow"></td>
+                        <td class="yellow"></td>
+                        <td class="yellow"></td>
+                        <td class="yellow"></td>
+                        <td class="yellow"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="yellow"></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+
+
+        <!--row3-->
+        <tr>
+            <!--col 1-->
+            <td>
+                <table border="1" height=100% width=100% class="blue" rules="all">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+            </td>
+            <!--col 2-->
+            <td>
+
+                <table border="1" height=100% width=100% rules="all">
+                    <!--row 5 col 3-->
+                    <tr>
+                        <td></td>
+                        <td class="blue"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="blue"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="blue"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="blue"></td>
+                        <td class="blue"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class=""></td>
+                        <td></td>
+                    </tr>
+
+                </table>
+
+            </td>
+            <!--col 3-->
+            <td>
+                <table border="1" height=100% width=100% class="yellow" rules="all">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+
+
+
+</body>
+
+</html>
